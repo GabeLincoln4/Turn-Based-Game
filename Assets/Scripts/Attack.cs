@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    void Update()
+    private float damage;
+    
+    public float DisplayAttackData(string attackerName, string victimName, string attackType)
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Player attacked opponent with " + KeyCode.Space + " attack!");
+            attackType = "Sword";
+            Debug.Log(attackerName + " attacked " + victimName + " with a " + attackType + " attack!");
         }
+
+        if (attackType == "Sword")
+        {
+            damage = 65f;
+        }
+
+        return damage;
     }
 }
