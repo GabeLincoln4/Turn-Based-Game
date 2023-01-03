@@ -6,7 +6,7 @@ public class Attack : MonoBehaviour
 {
     private float damage;
     
-    public float DisplayAttackData(string attackerName, string victimName, string attackType)
+    public float DisplayAttackData(string attackerName, string victimName, string attackType, float attackPower)
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {

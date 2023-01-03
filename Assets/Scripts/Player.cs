@@ -15,6 +15,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        _damageTaken = _attack.DisplayAttackData(_attackerName, "Ralphie", "Sword");
+        _damageTaken = _attack.DisplayAttackData(_attackerName, "Ralphie", "Sword", 0);
     }
 }
